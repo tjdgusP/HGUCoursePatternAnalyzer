@@ -117,5 +117,4 @@ private Student[] initiateStudentArrayFromLines(String[] lines) {
 
 		return false;
 	}
-
 }
