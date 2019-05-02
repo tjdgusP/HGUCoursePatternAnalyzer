@@ -59,9 +59,9 @@ public class HGUCoursePatternAnalyzer {
 		students = new Student[numOfStudents];
 	       int j=0;
 	       for(int i=0;i<lines.length;i++){
-	            Student studentT = new Student(lines[i].trim().split(", ")[1]);
-	            if(!studentExist(students, studentT)){
-	                students[j++] = studentT;
+	            Student student = new Student(lines[i].trim().split(", ")[1]);
+	            if(!studentExist(students, student)){
+	                students[j++] = student;
 	            }
 	            else ;
 			}
@@ -93,9 +93,9 @@ public class HGUCoursePatternAnalyzer {
 		courses = new Course[numOfCourses];
 	       int j=0;
 	       for(int i=0;i<lines.length;i++){
-	            Course courseT = new Course(lines[i].trim().split(", ")[2]);
-	            if(!courseExist(courses, courseT)){
-	                courses[j++] = courseT;
+	            Course course = new Course(lines[i].trim().split(", ")[2]);
+	            if(!courseExist(courses, course)){
+	                courses[j++] = course;
 	            }
 	            else ;
 	      }
